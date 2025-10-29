@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduLearn - Education Theme</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+    <style>
+        /* Basic Reset and Font */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hero Section (The main image area) */
+        .hero-section {
+            height: 100vh; /* Full viewport height */
+            background: url('your-realistic-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white; /* Text color over the image */
+            position: relative;
+        }
+
+        /* Overlay to make text readable */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+
+        /* Content box over the image */
+        .hero-content {
+            position: relative; /* Stacks above the ::before overlay */
+            z-index: 10;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Call-to-Action Button */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff; /* Primary action color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Optional: Footer for copyright */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            font-size: 0.8em;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Top Contact Bar -->
-  <header class="top-bar">
-    <div class="container">
-      <div class="left">
-        <span>📧 info@yourmail.com</span>
-        <span>📞 +0123-456-5678</span>
-      </div>
-      <div class="right">
-        <a href="#">Follow Us:</a>
-        <a href="#">🌐</a>
-        <a href="#">🐦</a>
-        <a href="#">📘</a>
-        <a href="#">▶️</a>
-        <a href="#">Login</a> /
-        <a href="#">Register</a>
-      </div>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Vision 👋</h1>
+            <p>Explore our journey, discover innovative solutions, and join a thriving community dedicated to excellence.</p>
+            <a href="#explore" class="cta-button">Start Exploring</a>
+        </div>
     </div>
-  </header>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="logo">
-        <h2>EDULEARN</h2>
-      </div>
-      <ul class="nav-links">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Teachers</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay">
-      <div class="hero-content">
-        <h1>Choose the right theme for education</h1>
-        <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt sed fringilla mauris amet nibh.</p>
-        <div class="buttons">
-          <a href="#" class="btn yellow">Read More</a>
-          <a href="#" class="btn outline">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
-  <section class="courses">
-    <div class="container">
-      <h2>Best platform to learn everything</h2>
-      <div class="course-cards">
-        <div class="card">
-          <div class="icon">🌐</div>
-          <h3>Language</h3>
-        </div>
-        <div class="card">
-          <div class="icon">📊</div>
-          <h3>Business</h3>
-        </div>
-        <div class="card">
-          <div class="icon">📘</div>
-          <h3>Literature</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+    <footer>
+        &copy; 2025 Your Company Name. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
